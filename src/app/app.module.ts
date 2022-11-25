@@ -6,12 +6,17 @@ import { AppComponent } from './app.component';
 import { AddTodoComponent } from './add-todo/add-todo.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ViewComponent } from './view/view.component';
 
 const myRoute:Routes=[
   {
     path:"",
     component:AddTodoComponent
   },
+  {
+    path:"view",
+    component:ViewComponent
+  }
   
 ]
 
@@ -19,7 +24,8 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     AddTodoComponent,
-    NavbarComponent
+    NavbarComponent,
+    ViewComponent
   ],
   imports: [
     BrowserModule,
